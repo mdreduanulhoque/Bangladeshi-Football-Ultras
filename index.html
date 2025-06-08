@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladeshi Football Ultras - Passion, Identity, Dedication</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d; /* Dark background for intensity */
+            color: #f0f0f0; /* Light text for contrast */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        /* Custom scrollbar for a sleek look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e53e3e; /* Red accent */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #c53030;
+        }
+        .section-padding {
+            padding: 80px 0;
+        }
+        .smooth-transition {
+            transition: all 0.3s ease-in-out;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        /* --- START: Updated Hero Background Style --- */
+        .hero-bg {
+            position: relative;
+            z-index: 1;
+            overflow: hidden; /* Ensures pseudo-elements don't overflow */
+        }
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            /* URL for the Bangladesh Flag background image. You can replace this. */
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAdVBMVEUAak70KkEAbU8Abk//I0D3KEH7JkDiMkL8JED6J0H3KUHvK0GsSEbcNUOXT0jAQUUuZU2PUUjEP0WjS0faNkPoL0IdZ03PO0R9VknVOEODVUl4V0rKPUScTkhVX0uzRkZoW0tzWUpFYkyLUklVX0ySUEhOYEx9rfjCAAADw0lEQVR4nO3d23aiMBQGYNkkEA6OqFVLtRZa7fs/4hCp09rOrI1Kkgn831UvemH+tRMSDslkAgAAAAAAAAAAAAAAAAAAAHCBTkKt/dP1D/qvNHkU1TxflHEmlVAyi8tFPq8K5HTSpFAtN4FQUSLTNGilqUwiJeRmWU1GHhOFxbFUKpHB38lEqfJYhKNNiSbzqYj+Fc+fmCIxnU9GGVK4X6goZfL56HeRWhxC1z/YtrCeCq5+LmpJTOtRhRTWK9WtgL6UklqNJyR6n4prAzqFJKbvoxiTaDK7KaA2pNkIBu5wK5MbA9ISuR18b9uJOwLSxM51E4yifXBPCX0UUrAfbmcLj/eWUEsch9rZaNZPQk1Gs4HW0UPUU0JBED24bowJ69X9w9CnZLV23aDerbNr1hs8mQ0to74TGmBGq74T0hm5blSfKO4/oSajeDjXtXDT50j9KdkMZX4U5spIQkGg8mFkRNu+Zow/ie0g+lrR34zxp6hw3bweUHzr3aEuhjBk09LUQNRSS+8zejU3ELXEq+sm3slsN9NSz7savZntZpp68zsjE7Pq76TrRt6DcjPT6ktJ7nEZrc13M035u+anFxtF1JTRi7dlZKmIPC4jWtopoqaMfJ0/kqWANE8jerTVz5qe9ui6sTeh0sakqCVLL8uoML06+0r4eFOEfpm8T/Rd9MvDMgqnphewX6VTDyNa2+xnTU/zb2pETzb7WdPTnrwrI5rZu55p0r+XRSizmlAQZN5FZPWSr/l32d/aHYqawWjruslXsreEPfNuKUs7u6N1M17vfItoZXPiqKUr3yKyPRQ1g5FnEVm/oPl3STvYu1d0pg6uG32d2kFEtetGX8X2Ck3zbJVGcwcR+fXg2u79tI+I/LqrRs8OInpGRAOLCB2Ng+GahYs+D1NH1h4LEA6WsSzcDGHhlhoLN2ZZuL3Pw0MiFh41svDAmoXXHlh4eYaHV7BYeJGPhddBeXipmIVX03n4wIGFz2RY+NiKh0/2WPjwk4fPh1n4CL0DbGXAwYYYPBvbqvi+WRg252FhiyeemT0dz4awURi2m+uAaoObFtZDKCJsfdkFNlDlYRveDrCZMwtbgvOwsXwHPR9P4Lo5RuCQCxaOSuHhwB0eHXBsEw+Hf7FwhBwPBxF2gOMsOwjrGIeicnC0bgdXHtC8H11AGo757kAfFr/BYfEMokm13ARCRYlMz/0uTWUSKSE3y0r/AzQpUFHN80UZZ1IJJbO4XOTzqiDEc4FOQq390/UPAgAAAAAAAAAAAAAAAAAAAK/8BiVeSYPV41M0AAAAAElFTkSuQmCC') no-repeat center center / cover;
+            filter: blur(5px); /* This creates the blur effect. Adjust value as needed. */
+            transform: scale(1.1); /* Scales the image to prevent blurred edges from showing */
+            z-index: -2;
+        }
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6); /* Dark overlay to ensure text is readable */
+            z-index: -1;
+        }
+        /* --- END: Updated Hero Background Style --- */
+
+        /* --- Animations --- */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-down {
+            animation: fadeInDown 1s ease-out forwards;
+        }
+        /* --- End Animations --- */
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-black text-white p-4 shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+            <a href="#" class="text-3xl font-extrabold text-red-600 tracking-wide rounded-md p-2">
+                <span class="text-white">BF</span><span class="text-red-600">U</span>
+            </a>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="smooth-transition hover:text-red-600 text-lg font-semibold px-3 py-2 rounded-md">Home</a></li>
+                <li><a href="#passion" class="smooth-transition hover:text-red-600 text-lg font-semibold px-3 py-2 rounded-md">Passion</a></li>
+                <li><a href="#identity" class="smooth-transition hover:text-red-600 text-lg font-semibold px-3 py-2 rounded-md">Identity</a></li>
+                <li><a href="#dedication" class="smooth-transition hover:text-red-600 text-lg font-semibold px-3 py-2 rounded-md">Dedication</a></li>
+                <li><a href="#gallery" class="smooth-transition hover:text-red-600 text-lg font-semibold px-3 py-2 rounded-md">Gallery</a></li>
+                <li><a href="#contact" class="smooth-transition hover:text-red-600 text-lg font-semibold px-3 py-2 rounded-md">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white h-screen flex items-center justify-center text-center p-4">
+        <div class="max-w-4xl mx-auto bg-black bg-opacity-70 rounded-xl p-8 shadow-2xl smooth-transition">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight animate-fade-in-down">
+                The Roar of the <span class="text-red-600">Bengal Tigers</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-light leading-relaxed">
+                We are the <span class="font-bold text-red-600">Bangladeshi Football Ultras</span>, the unwavering voice of Bangladesh football, united by an unyielding passion for the beautiful game.
+            </p>
+            <a href="#passion" class="inline-block bg-red-600 text-white text-xl font-bold py-4 px-10 rounded-full hover:bg-red-700 smooth-transition shadow-lg hover-scale">
+                Discover Our Spirit
+            </a>
+        </div>
+    </section>
+
+    <!-- Passion Section (About) -->
+    <section id="passion" class="bg-gray-900 section-padding p-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://scontent.fdac152-1.fna.fbcdn.net/v/t39.30808-6/492238083_1238997498226609_8064871425075939361_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=forfoetrq40Q7kNvwHf7TIB&_nc_oc=AdmaggLnrZ2qKVIgAYY9nqOsnZszOWhi1JVX5aUiof42GaCtaeCbdZi6Pq-YFf0t0RM&_nc_zt=23&_nc_ht=scontent.fdac152-1.fna&_nc_gid=S70Cv8KHU9m830yf3XBC9Q&oh=00_AfM4QwTyuI16-sW01zvD8QBb-reRMJVVcjul6FBb3EWH-A&oe=684B80B2" alt="Ultras Chanting" class="rounded-xl shadow-2xl w-full h-auto object-cover smooth-transition hover-scale" onerror="this.onerror=null;this.src='https://placehold.co/800x600/800000/FFFFFF?text=Image+Load+Error';">
+            </div>
+            <div class="md:w-1/2 text-left">
+                <h2 class="text-4xl font-bold mb-6 text-red-600 border-b-4 border-red-600 pb-2 inline-block">Our Unwavering Passion</h2>
+                <p class="text-lg leading-relaxed mb-4">
+                    Born from a deep love for Bangladesh football, the Bangladeshi Football Ultras emerged as a movement to reignite the nation's sporting fervor. We remember the golden era of the 1990s, when stadiums vibrated with energy and rivalries like Abahani and Mohammedan captured the nation's heart.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Our journey began amidst calls for change, driven by a singular vision: to bring back the electrifying atmosphere that inspires our team and intimidates opponents. We believe in the power of collective rhythm, chants, and unwavering support to transform every match into an unforgettable experience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Identity Section -->
+    <section id="identity" class="bg-black section-padding p-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-white border-b-4 border-white pb-2 inline-block">Our Distinct Identity</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Identity Card 1 -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl smooth-transition hover-scale transform hover:-translate-y-2">
+                    <img src="https://scontent.fdac152-1.fna.fbcdn.net/v/t39.30808-6/502419101_1273595991433426_7717910165661381243_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEdU-DqhHQzdl6Aoo2Om3IEY6m72HLNfJpjqbvYcs18mqpZFOJrrFXICXLoPydLXLKPq0dXqObH0WF5mfZ87tHW&_nc_ohc=iIPZvYvSuMMQ7kNvwEO8Fl6&_nc_oc=Adkz9zVgq6xUWm_ox0Q_2UjEzmPGWcBlVr49bMj39SeqvRJDHYyI-KjZ4m7ZeXBzJt0&_nc_zt=23&_nc_ht=scontent.fdac152-1.fna&_nc_gid=J9Rc-SIvzDmUw2ruGpseiw&oh=00_AfO92TfD6La088BULlyUWszBtCkx9ViFwvA0Olk4lhgF6A&oe=684B777B" alt="Black Attire" class="w-full h-48 object-cover rounded-md mb-6" onerror="this.onerror=null;this.src='https://placehold.co/400x300/800000/FFFFFF?text=Image+Load+Error';">
+                    <h3 class="text-2xl font-semibold mb-4 text-red-600">The Black Wall</h3>
+                    <p class="text-base leading-relaxed text-gray-300">
+                        Our signature black attire and bandanas symbolize our unity and formidable presence. We move as one, a sea of black, echoing our determination to stand strong with our team.
+                    </p>
+                </div>
+                <!-- Identity Card 2 -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl smooth-transition hover-scale transform hover:-translate-y-2">
+                    <img src="https://scontent.fdac152-1.fna.fbcdn.net/v/t51.75761-15/487212658_17916510555076010_6189912729273399111_n.jpg?stp=dst-jpg_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEew9afGHvy8jiGlPgourvUO9vcHXW61E8729wddbrUTw_Z_WhKiWxrnsRJseP9u55yToSVg8ysety_r6buKReg&_nc_ohc=eHIEyqzBlNIQ7kNvwGSPHcV&_nc_oc=AdnRyAyLpLkyyfRqlCjkHJzSDtdgaDbcYJ1faWuaXhxF1FSP5EiwOHk-4kpN8ZJSUDM&_nc_zt=23&_nc_ht=scontent.fdac152-1.fna&_nc_gid=3-0KqqdR9ZGtf9N5fITeqw&oh=00_AfOjTn2iPeeQ0eCCiNyvPuZ2gyVmlxfb36ti7P2Ho2J1Pg&oe=684B9563" alt="Drums and Whistles" class="w-full h-48 object-cover rounded-md mb-6" onerror="this.onerror=null;this.src='https://placehold.co/400x300/800000/FFFFFF?text=Image+Load+Error';">
+                    <h3 class="text-2xl font-semibold mb-4 text-red-600">Rhythm of Support</h3>
+                    <p class="text-base leading-relaxed text-gray-300">
+                        Drums, whistles, and powerful chants are the heartbeat of our support. We create an electrifying sonic landscape that fuels our players and reverberates through the stadium.
+                    </p>
+                </div>
+                <!-- Identity Card 3 -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl smooth-transition hover-scale transform hover:-translate-y-2">
+                    <img src="https://scontent.fdac152-1.fna.fbcdn.net/v/t39.30808-6/503377938_1274212451371780_4270228805830245142_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH9s3uMyygdBSlQwpRZF87A-cJXi1rjpbf5wleLWuOlt7vcrELka1dOQJcR21Ardv3IH4JY0cB6YAX76KV2LOOZ&_nc_ohc=pH9vM4mjm5kQ7kNvwGQcaE0&_nc_oc=Admmtqb1khXjqcC_W0tF_pBbA4BVgFz-pZIXPHXdzzT_7fTCIRjRjgPsUnix-SWhliI&_nc_zt=23&_nc_ht=scontent.fdac152-1.fna&_nc_gid=M5-2UKUpmSVNHjWTZ8bt2Q&oh=00_AfMzs9JOuODxkteY4-_BgQY_AI7yZmAKDsTOLavEVHqDnw&oe=684B797B" alt="Tifos and Banners" class="w-full h-48 object-cover rounded-md mb-6" onerror="this.onerror=null;this.src='https://placehold.co/400x300/800000/FFFFFF?text=Image+Load+Error';">
+                    <h3 class="text-2xl font-semibold mb-4 text-red-600">Visual Spectacle</h3>
+                    <p class="text-base leading-relaxed text-gray-300">
+                        Elaborate tifos, vibrant smoke, and defiant banners are our visual language. We paint the stands with messages of pride, hope, and unwavering belief in Bangladeshi football.
+                    </p>
+                </div>
+            </div>
+            <p class="text-3xl font-extrabold text-red-600 mt-16 animate-pulse">
+                "No Ultras, No Football!"
+            </p>
+        </div>
+    </section>
+
+    <!-- Dedication Section -->
+    <section id="dedication" class="bg-gray-900 section-padding p-4">
+        <div class="container mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://scontent.fdac152-1.fna.fbcdn.net/v/t51.75761-15/503750716_17924195517076010_1117059221602960401_n.webp?stp=dst-jpg_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGjG9OD-a1h4Dz24ROWAQaPAkhMRGHAePICSExEYcB48hHsoYoNT3m3As-bG3U74xblE1OocZVTxlNiqTCd3Yto&_nc_ohc=DHGbA29l35oQ7kNvwEfPsKC&_nc_oc=AdkC--R3__aQF6njh5xSpNu8uGvkksG7mdDqoGW7nzlo3KZa7MByELnhVJDLVP6EKAI&_nc_zt=23&_nc_ht=scontent.fdac152-1.fna&_nc_gid=JUd27dkbTqXkMR5dvYbE9A&oh=00_AfOAaeZf1_vw8OStSfcAP0ScmVdYTAdQNHUm2cRthjWv_w&oe=684B7B22" alt="Ultras Protesting" class="rounded-xl shadow-2xl w-full h-auto object-cover smooth-transition hover-scale" onerror="this.onerror=null;this.src='https://placehold.co/800x600/800000/FFFFFF?text=Image+Load+Error';">
+            </div>
+            <div class="md:w-1/2 text-left">
+                <h2 class="text-4xl font-bold mb-6 text-red-600 border-b-4 border-red-600 pb-2 inline-block">Our Unwavering Dedication</h2>
+                <p class="text-lg leading-relaxed mb-4">
+                    Our commitment extends beyond the ninety minutes of a match. We are advocates for the game, tirelessly working to ensure that Bangladeshi football receives the support and recognition it deserves. We've championed players, fought for fair practices, and consistently raised our voices for the betterment of the sport.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    From demanding proper ticket allocations to advocating for talented diaspora players like Hamza, we are on the front lines, pushing for a brighter future for the Bengal Tigers. Our dedication is a promise: we will keep fighting for the soul of football in Bangladesh.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="bg-black section-padding p-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 text-white border-b-4 border-white pb-2 inline-block">Moments of Glory</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="relative group rounded-xl overflow-hidden shadow-xl smooth-transition hover-scale">
+                    <img src="https://scontent.fdac152-1.fna.fbcdn.net/v/t39.30808-6/503578928_1274212458038446_3060643483465671026_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEm24u2jAVUA9hhfx2s8FfS-3VUGbjJYO77dVQZuMlg7oTTbi4Mok9zfElcLvq_ojsdl-6R0lnt6RA8qJNpkI0V&_nc_ohc=n4pyQUanLWIQ7kNvwHlbXXX&_nc_oc=Admb6n06HESUk_qT52ZRbs2GY4pCNSsTeLEz-Zgab4WLWFjLO1_jke6cNKgmf-_d_DE&_nc_zt=23&_nc_ht=scontent.fdac152-1.fna&_nc_gid=oOiIZoLRDGxY_ucNhRHyWg&oh=00_AfMFjDV5CHY7yJhM_QropwZ3IEUIQ-7KqJKJp5BKLbUHXQ&oe=684B69AA" alt="Gallery Image 1" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/800000/FFFFFF?text=Image+Load+Error';">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 smooth-transition">
+                        <p class="text-white text-lg font-bold">United We Stand</p>
+                    </div>
+                </div>
+                <div class="relative group rounded-xl overflow-hidden shadow-xl smooth-transition hover-scale">
+                    <img src="https://scontent.fdac152-1.fna.fbcdn.net/v/t39.30808-6/502451319_1272897371503288_3179131726444988874_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHTBfXxpByBakq5Xn8sYmNwYIPLy6OJ5K9gg8vLo4nkr_NZ7-HoBtoK6gmQi7c0u5sheQ0kpNtGW61MrfEJWjME&_nc_ohc=Iy-TFSWSv1EQ7kNvwGXmW5W&_nc_oc=AdnxYG41MRNVJgeVOa7vzWft-PiLF6NRBoKSpKoGEtaTELyXulHON1xMXfbQE5uXCc8&_nc_zt=23&_nc_ht=scontent.fdac152-1.fna&_nc_gid=N37jj-TMvWS66NkWyDh26A&oh=00_AfPjNWZi7CH9N9ib9oG2upOzVuPPc7RYeBZXK6E6rVCeFA&oe=684B9A15" alt="Gallery Image 2" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/800000/FFFFFF?text=Image+Load+Error';">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 smooth-transition">
+                        <p class="text-white text-lg font-bold">With Our Star</p>
+                    </div>
+                </div>
+                <div class="relative group rounded-xl overflow-hidden shadow-xl smooth-transition hover-scale">
+                    <img src="https://scontent.fdac152-1.fna.fbcdn.net/v/t39.30808-6/498550586_1259722946154064_7265106498438940952_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFI4N9YwJc6cUaazERvFda7F8Hyyg2qQPwXwfLKDapA_IATisilX9MWV6lyXN65oGYhEHlLYqZLbV5GZgVAkUzV&_nc_ohc=uWA3_0rlAeEQ7kNvwFLeWzo&_nc_oc=AdmDloVy8JpOa_RBMwSGA9UhbdB_OOd3BXkvX7TS_fXUqCoSTQzZkuaNXm0MoIk8H_E&_nc_zt=23&_nc_ht=scontent.fdac152-1.fna&_nc_gid=jDg3mJ3g5B8vIqORtvJyMw&oh=00_AfMRxGZAAPwhyuabdYjRSKLFE8vntxJ1rZvcbPUS-P6zgg&oe=684B6DC3" alt="Gallery Image 3" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/800000/FFFFFF?text=Image+Load+Error';">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 smooth-transition">
+                        <p class="text-white text-lg font-bold">Save Bangladesh Football</p>
+                    </div>
+                </div>
+                <div class="relative group rounded-xl overflow-hidden shadow-xl smooth-transition hover-scale">
+                    <img src="https://scontent.fdac152-1.fna.fbcdn.net/v/t51.75761-15/465301848_17898862002076010_5180157394607590777_n.jpg?stp=dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFitn9SHve_LMT0p033BurjnPPAREmCT9ic88BESYJP2K8XoAsT_9mj33P5bxEgiSNrtOJy1JtB8VCAGnXmDRL0&_nc_ohc=ywkYnW6kXtwQ7kNvwG-SWdi&_nc_oc=AdmGT4kOgiaOc89rAJLwG4gvPmIW9REQdvBdcq8SDq8n-b9UcKSZqgH6Ka8-ER08Kgc&_nc_zt=23&_nc_ht=scontent.fdac152-1.fna&_nc_gid=6H5sSAJiySWiEhz-9A8pVQ&oh=00_AfNWsIk1krYUSjqh7YOZ145oR8-BLWTZ1fImSHa_SLONwA&oe=684B6C40" alt="Gallery Image 4" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/800000/FFFFFF?text=Image+Load+Error';">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 smooth-transition">
+                        <p class="text-white text-lg font-bold">Winning Energy</p>
+                    </div>
+                </div>
+                <div class="relative group rounded-xl overflow-hidden shadow-xl smooth-transition hover-scale">
+                    <img src="https://scontent.fdac152-1.fna.fbcdn.net/v/t39.30808-6/496005426_1257245336401825_5817757637063715474_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGykla4tmfBTnBGdZO0BuBUsiPhDsY9AoSyI-EOxj0ChCADRjxeFGuys4QVji6klduIJ7Ypfyun7I4yV0TpqO9Q&_nc_ohc=W37hc8SGwx8Q7kNvwE2RV2J&_nc_oc=Adnjbi8Qg6FQEg7WiP9eNV4cqalExC4s5lMODGIEq2h2PdHbflzZW6waZpGq3WUaRmo&_nc_zt=23&_nc_ht=scontent.fdac152-1.fna&_nc_gid=8qAwmxmky3HtXHorZgMBCg&oh=00_AfMq8znTnzv7g01yQGExyLGuA79ZYq7XFGxLlv8VdYFXLg&oe=684B7584" alt="Gallery Image 5" class="w-full h-64 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/800000/FFFFFF?text=Image+Load+Error';">
+                    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 smooth-transition">
+                        <p class="text-white text-lg font-bold">Match Day Energy</p>
+                    </div>
+                </div>
+            
+            </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-900 section-padding p-4">
+        <div class="container mx-auto text-center max-w-2xl">
+            <h2 class="text-4xl font-bold mb-8 text-red-600 border-b-4 border-red-600 pb-2 inline-block">Join the Movement</h2>
+            <p class="text-lg leading-relaxed mb-12">
+                Are you a passionate supporter of Bangladesh football? Do you want to be part of the roar? Connect with us on social media and join the Bangladeshi Football Ultras family!
+            </p>
+            <div class="flex justify-center items-center space-x-8">
+                <a href="#" class="text-white hover:text-red-600 smooth-transition" aria-label="Facebook">
+                    <i class="fab fa-facebook fa-3x"></i>
+                </a>
+                <a href="#" class="text-white hover:text-red-600 smooth-transition" aria-label="Telegram">
+                    <i class="fab fa-telegram fa-3x"></i>
+                </a>
+                <a href="#" class="text-white hover:text-red-600 smooth-transition" aria-label="Instagram">
+                    <i class="fab fa-instagram fa-3x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Closing Quote Section -->
+    <section class="bg-black py-16 px-4">
+        <div class="container mx-auto text-center">
+            <p class="text-3xl md:text-4xl font-extrabold text-white leading-tight">
+                Win, Lose or Tie ...<br>
+                <span class="text-red-600">Bangladesh Till We Die</span>
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-400 p-8 text-center">
+        <p>&copy; 2025 Bangladeshi Football Ultras. All rights reserved.</p>
+        <p class="mt-2">Designed with passion for the beautiful game.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple Intersection Observer for animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        };
+
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Add the animation class when the section comes into view
+                    entry.target.classList.add('animate-fade-in-up');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10'); // Remove initial hidden state
+                    observer.unobserve(entry.target); // Stop observing once animated
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        // Apply initial hidden state to sections for the animation to work
+        document.querySelectorAll('.section-padding').forEach(section => {
+            section.classList.add('opacity-0', 'transform', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
